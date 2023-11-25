@@ -2,7 +2,7 @@ package ru.geekbrains.lesson6.srp2;
 
 public class Program {
 
-    /**
+    /*
      * TO DO: Переработать структуру приложения Order, приложение должно соответствовать
      *  принципу SRP.
      * @param args
