@@ -1,5 +1,7 @@
 package ru.geekbrains.lesson6.srp2;
 
+import ru.geekbrains.lesson6.srp1.SquareDrawer;
+
 public class Program {
 
     /*
@@ -8,11 +10,10 @@ public class Program {
      * @param args
      */
     public static void main(String[] args) {
-
-        Order order = new Order();
-        order.inputFromConsole();
-        order.saveToJson();
-
+        OrderReader orderReader = new OrderReader();
+        Order order = orderReader.inputFromConsole();
+        OrderSaver orderSaver = new OrderSaver(order);
+        orderSaver.saveToJson();
     }
 
 }
